@@ -1,0 +1,28 @@
+node_modules/
+work/
+data/
+dist/
+
+# Local configuration and credentials; share examples only.
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.yaml
+*.local.yml
+.npmrc
+
+# Reminder databases, logs, private exports and backups.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.bak
+*.tgz
+*.zip
+*.pem
+*.key
+
+.DS_Store
+Thumbs.db
