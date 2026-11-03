@@ -1,0 +1,9 @@
+# Merge this table into your Codex config.toml; do not replace the whole file.
+# Replace the placeholder with your installed project path. Keep credentials in .env.
+[mcp_servers.bark]
+command = "node"
+args = ["--use-env-proxy", "/ABSOLUTE/PATH/TO/bark-local-mcp/src/server.mjs"]
+env_vars = ["HTTP_PROXY", "HTTPS_PROXY", "NO_PROXY", "http_proxy", "https_proxy", "no_proxy", "BARK_ENV_FILE", "BARK_CONFIG_FILE", "BARK_SERVER_URL", "BARK_DEVICE_KEY", "BARK_DEFAULT_GROUP", "BARK_TIMEOUT_MS", "BARK_DATA_DIR"]
+startup_timeout_sec = 10
+tool_timeout_sec = 20
+enabled_tools = ["send_notification", "check_service", "list_scheduled_notifications", "cancel_scheduled_notification"]

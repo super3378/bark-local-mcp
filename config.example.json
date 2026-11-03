@@ -1,0 +1,6 @@
+{
+  "serverUrl": "https://your-bark-server.example",
+  "deviceKey": "REPLACE_WITH_YOUR_DEVICE_KEY",
+  "defaultGroup": "Codex",
+  "timeoutMs": 10000
+}

@@ -1,0 +1,25 @@
+{
+  "name": "bark-local-mcp",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "description": "Local stdio MCP tools for an existing Bark server",
+  "engines": { "node": "^22.21.0 || >=24.5.0" },
+  "scripts": {
+    "start": "node --use-env-proxy src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check-service.mjs",
+    "scheduler:start": "node --use-env-proxy scripts/scheduler-control.mjs start",
+    "scheduler:status": "node scripts/scheduler-control.mjs status",
+    "scheduler:stop": "node scripts/scheduler-control.mjs stop",
+    "privacy:check": "node scripts/privacy-check.mjs"
+  },
+  "files": [".env.example", "config.example.json", "README.md", "src/", "scripts/", "clients/", "test/"],
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0"
+  }
+}

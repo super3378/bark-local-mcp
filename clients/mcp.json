@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bark": {
+      "command": "node",
+      "args": ["--use-env-proxy", "/ABSOLUTE/PATH/TO/bark-local-mcp/src/server.mjs"]
+    }
+  }
+}
